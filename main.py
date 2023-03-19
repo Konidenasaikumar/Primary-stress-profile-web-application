@@ -8,6 +8,7 @@ st.image('Joints.PNG')
 inp1=st.radio(label='Select the type of loading and type of weld', 
          options=['Double V- Tension','Double V- Bending', 'Single V- Tension',
                   'Single V- Bending'], horizontal=True, index=0, help='Choose only one')
+#q1.....q12 are constants for coeffecients to determine E1
 if inp1=='Double V- Tension':
     p1=1.9220
     p2=0.3224
