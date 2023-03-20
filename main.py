@@ -7,7 +7,7 @@ st.write('')
 st.image('Joints.PNG')
 inp1=st.radio(label='Select the type of loading and type of weld', 
          options=['Double V- Tension','Double V- Bending', 'Single V- Tension',
-                  'Single V- Bending'], horizontal=True, index=0, help='Choose only one')
+                  'Single V- Bending'], horizontal=True, index=0, help='Double V also can be choosen for Cruciform Joint')
 #q1.....q12 are constants for coeffecients to determine E1
 if inp1=='Double V- Tension':
     p1=1.9220
@@ -158,7 +158,7 @@ st.write('  ')
 col1, col2 = st.columns(2)
 with col1:
    save_name=st.text_input(label='File name', value="", max_chars=None,
-                            placeholder='Desirable file name to be saved')
+                            placeholder='Desirable name of file to be saved')
  
 with col2:
    st.write('')
